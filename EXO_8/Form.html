@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../../css/EXO-08.css" media="all">
+    <script src="https://kit.fontawesome.com/940314a512.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="titreEtNav">
+      <header>
+<!--header et nav sont clonés-->
+        <h1 class="titreDePageDinscription">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          Le Camping des faux bronzés
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </h1>
+      </header>
+      <nav>
+        <a href="Accueil_Camping.html" title="Aller à l'accueil" class="boutonNav">Accueil</a>
+        <a href="Magasin_Camping.html" title="Aller dans le magasin" class="boutonNav">Magasin</a>
+        <a href="Form.html" title="Aller au formulaire d'inscription" class="boutonNav">Inscription</a>
+      </nav>
+    </div>
+    <section>
+      <article>
+        <h2>
+          Inscription au camping
+        </h2>
+<!--j'ai fait un formulaire d'incription pour campeurs-->
+
+          <form method="post" action="http://localhost" enctype="multipart/form-data">
+            <label for="nomInscription">
+              Nom :
+            </label>
+              <input type="text" name="nomInscription" id="nomInscription" placeholder="Entrer un nom." class="parametreInput" required>
+            <label for="prenomInscription">
+              Prénom :
+            </label>
+            <input type="text" name="prenomInscription" id="prenomInscription" placeholder="Entrer un prénom." class="parametreInput" required>
+            <label for="adresseMailInscription">
+              Adresse mail :
+            </label>
+            <input type="text" name="adresseMailInscription" id="adresseMailInscription" placeholder="Entrer une adresse mail." class="parametreInput" required>
+            <label for="motDePasseInscription">
+              Entrez votre mot de passe :
+            </label>
+            <input type="password" name="motDePasseInscription" id="motDePasseInscription" placeholder="Entrer un mot de passe." class="parametreInput" required>
+            <label for="dateNaissanceInscription">
+              Date de naissance :
+            </label>
+            <input type="date" name="dateNaissanceInscription" id="dateNaissanceInscription" class="parametreInput" required>
+            <div id="genreFM">
+              <p>Sexe :</P>
+              <div id="boutonFemme">
+              <input type="radio" name="genreDeFM" id="genreDeFH" value="Femme">
+              <label for="genreDeFH">
+                Femme
+              </label>
+              </div>
+              <div id="boutonHomme">
+              <input type="radio" name="genreDeFM" id="genreDeHF" value="Homme">
+              <label for="genreDeHF">
+                Homme
+              </label>
+              </div>
+            </div>
+            <label for="adresseInscription">
+              Adresse :
+            </label>
+            <input type="text" name="adresseInscription" id="adresseInscription" class="parametreInput" placeholder="Entrer une adresse.">
+            <label for="numeroAdresse">
+              Numéro :
+            </label>
+            <input type="number" name="numeroAdresse" id="numeroAdresse" class="parametreInput" placeholder="Entrer un numéro d'adresse.">
+            <label for="codePostalInscription">
+             Code postal :
+            </label>
+            <input type="number" name="codePostalInscription" id="codePostalInscription" class="parametreInput" placeholder="Entrer un code postal.">
+            <label for="villeInscription">
+              Ville :
+            </label>
+            <input type="text" name="villeInscription" id="villeInscription" class="parametreInput" placeholder="Entrer une ville.">
+            <label for="statutInscription">
+              Status :
+            </label>
+            <select name="statutInscription" id="statutInscription" class="parametreInput">
+              <option value="particulier"> Particulier </option>
+              <option value="invite"> Invité </option>
+              <option value="professionnel"> Professionnel</option>
+            </select>
+            <label for="descInsription">
+              Description de l'utilisateur :
+            </label>
+            <textarea name="desInscription" id="descInsription" cols="75" rows="10" class="parametreInput" placeholder="Décrire dans les grandes lignes l'utilisateur qui s'inscrit."></textarea>
+            <label for="fichierPhoto">
+              Entrer une photo de profil :
+            </label>
+            <input type="file" name="fichierPhoto" id="fichierPhoto" class="parametreInput">
+            <div id="conditionsGen">
+              <input type="checkbox" name="condGenIns" id="conGenIns">
+              <label for="conGenIns"> J'accepte les conditions générales.</label>
+            </div>
+            <input type="submit" name="boutonValidation" id="boutonValidation" value="Valider">
+          </form>
+      </article>
+    </section>
+    <footer>
+      Copyrigth Nombe Moses
+    </footer>
+  </body>
+</html>
